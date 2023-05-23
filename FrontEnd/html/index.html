@@ -27,7 +27,7 @@
     </style>
     <div class="bg-dark" style="width: 100%; height: 92vh; display: flex; flex-direction:column; align-items: center; justify-content: center;">
 
-        <div class="container-md" style="background-color: #4D4D4D; border-radius: 10px;">
+        <div class="container-md" style="background-color: #848C85; border-radius: 10px;">
             <ul class="nav nav-pills" style=" margin: 15px">
                 <li class="nav-item">
                     <button type="button" class="btn btn-secondary">Arquivos</button>
@@ -36,7 +36,10 @@
                     <button type="button" class="btn btn-secondary">Progamas</button>
                 </li>
                 <li class="nav-item">
-                    <button type="button" class="btn btn-secondary">Permissao</button>
+                    <button type="button" class="btn btn-secondary">Permissão</button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-secondary">Instalação</button>
                 </li>
                 <li class="nav-item">
                     <button type="button" class="btn btn-secondary">Servidor</button>
@@ -46,14 +49,21 @@
             <div id="conteudo" style="min-width: 100%; min-height: 80vh;">
                 <h1>Arquivos</h1>
                 <div id="conteudoArquivos">
-                    <h2>criar pasta</h2>
-                    <div id="criarPasta">
-                        texto sobre como criar pasta fodase
+                    <h4>Criar Diretórios</h4>
+                    <div id="criarDiretorios" style="letter-spacing: .3px; padding-bottom: 20px;">
+                        <p>Use o comando <strong> mkdir </strong> para criar um ou vários diretórios de uma só vez e definir permissões para cada um deles.</p>
+                        <p> </p>
                         <div clas="codigo">
-                            codigo para criar pasta
-                        </div>
+                        <p><strong> mkdir nome_do_diretório </strong></p>
                     </div>
-                    
+                    </div>
+                    <h4>Remover Diretórios</h4>
+                    <div id="removerDiretorios" style="letter-spacing: .3px; padding-bottom: 20px;">
+                        <p>Use o comando <strong> rmdir </strong> para excluir permanentemente um diretório vazio.</p>
+                        <p>Exemplo, você deseja remover um diretorio chamado bolacha </p>
+                        <div clas="codigo">
+                        <p> <strong>rmdir bolacha</strong></p>
+                    </div>
                 
                 </div>
             </div>
