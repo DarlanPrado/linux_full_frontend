@@ -8,27 +8,87 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <title>Biblia do Linux</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
-<body style="padding: 0; margin: 0;">
+<body style="padding: 0; margin: 0;" class="bg-dark">
 
     <nav class="navbar bg-body-tertiary" style="width: 100%; padding: 0">
         <div class="container-fluid" style="background-color: black;">
           <a class="navbar-brand" style="color: white; height: 60px" href="#">
-            Biblia do Linux
+            <h1>Biblia do Linux<ion-icon name="book-outline" class="icone"></ion-icon></h1>
           </a>
         </div>
     </nav>
     <style>
+        .icone{
+            padding: 0px 20px;
+            padding-top: 8px;
+        }
+
+        *::selection{
+            background-color: rgba(6, 3, 180, 0.801);
+            filter: brightness(2);
+            text-shadow: 2px 2px 5px rgb(0, 251, 255);
+            color:rgb(0, 251, 255)
+            
+        }
+
         .body{
-           
             border-bottom-left-radius: ;
             border-top-right-radius: ;
         }
-    </style>
-    <div class="bg-dark" style="width: 100%; height: 92vh; display: flex; flex-direction:column; align-items: center; justify-content: center;">
 
-        <div class="container-md" style="background-color: #848C85; border-radius: 10px;">
-            <ul class="nav nav-pills" style=" margin: 15px">
+        .btn{
+            background-color: transparent;
+            margin: 0px 10px;
+            box-shadow: 4px 2px 6px rgba(255, 255, 255, 0.455);
+
+        }
+
+        .btn:hover{
+            transition: .8s;
+            scale: 1.1;
+            background-color: transparent;
+            text-shadow: 1px 1px 5px rgb(255, 255, 255);
+            
+        }
+
+        p{
+            color: white;
+        }
+
+        h1,h2,h3,h4,h5,h6{
+            color: white;
+            text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.404) !important;
+        }
+
+        h1{
+            display: flex;
+            justify-content: center;
+        }
+
+        .codigo{
+            display: flex;
+            justify-content: start;
+
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 6px 6px 10px rgba(255, 255, 255, 0.455);
+            border: 0.5px solid rgba(255, 255, 255, 0.388);
+        }
+
+        .codigo p{
+            margin: 0px  !important;
+        }
+
+
+        
+    </style>
+    <div style="width: 100%; height: 92vh; display: flex; flex-direction:column; align-items: center; justify-content: center;">
+
+        <div class="container-md" style="background-color: #00000043; border-radius: 10px;">
+            <ul class="nav nav-pills" style=" margin: 15px; height: 5vh;">
                 <li class="nav-item">
                     <button type="button" class="btn btn-secondary">Arquivos</button>
                 </li>
@@ -46,24 +106,29 @@
                 </li>
             </ul>
             <hr style="color:aliceblue; margin: 2px">
-            <div id="conteudo" style="min-width: 100%; min-height: 80vh;">
+            <div id="conteudo" style="min-width: 100%; min-height: 80vh; padding: 30px;">
                 <h1>Arquivos</h1>
                 <div id="conteudoArquivos">
                     <h4>Criar Diretórios</h4>
                     <div id="criarDiretorios" style="letter-spacing: .3px; padding-bottom: 20px;">
                         <p>Use o comando <strong> mkdir </strong> para criar um ou vários diretórios de uma só vez e definir permissões para cada um deles.</p>
-                        <p> </p>
-                        <div clas="codigo">
-                        <p><strong> mkdir nome_do_diretório </strong></p>
-                    </div>
+                        
+                        <div class="codigo">
+                            <p class="pcodigo"><strong> mkdir nome_do_diretório </strong></p>
+                        </div>
                     </div>
                     <h4>Remover Diretórios</h4>
                     <div id="removerDiretorios" style="letter-spacing: .3px; padding-bottom: 20px;">
                         <p>Use o comando <strong> rmdir </strong> para excluir permanentemente um diretório vazio.</p>
-                        <p>Exemplo, você deseja remover um diretorio chamado bolacha </p>
-                        <div clas="codigo">
-                        <p> <strong>rmdir bolacha</strong></p>
+                        
+                        <div class="codigo">
+                        <p> <strong>rmdir nome_diretorio</strong></p>
                     </div>
+
+                    
+
+                   
+                    
                 
                 </div>
             </div>
