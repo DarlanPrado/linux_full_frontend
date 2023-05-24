@@ -113,21 +113,56 @@
             <div id="conteudo" style="min-width: 100%; min-height: 80vh; padding: 30px;">
                 <h1>Arquivos</h1>
                 <div id="conteudoArquivos">
-                    <h4>Criar Diretórios</h4>
+                    <h4>Instalar Programas</h4>
                     <div id="criarDiretorios" style="letter-spacing: .3px; padding-bottom: 20px;">
-                        <p>Use o comando <strong> mkdir </strong> para criar um ou vários diretórios de uma só vez e definir permissões para cada um deles.</p>
-                        
+                        <p>O comando <strong> apt </strong>  é usado em distribuições baseadas no Debian, como Ubuntu, para gerenciar pacotes. Aqui estão alguns exemplos de como usar o comando <strong>apt</strong>:</p>
+                        <p> Atualizar a lista de pacotes: Antes de instalar ou atualizar pacotes, é uma boa prática atualizar a lista de pacotes disponíveis. Use o seguinte comando para atualizar a lista: </p>
                         <div class="codigo">
-                            <p class="pcodigo"><strong> mkdir </strong> nome_do_diretório </p>
+                            <p class="pcodigo">sudo <strong> apt </strong>update </p>
+                        </div>
+                        <br>
+                        <p>Instalar um pacote: Para instalar um novo pacote, use o seguinte comando:</p>
+                        <div class="codigo">
+                            <p class="pcodigo"> sudo <strong> apt </strong> install nome_do_pacote </p>
+                        </div>
+                        <br>
+                        <p>Remover um pacote: Para remover um pacote instalado, use o seguinte comando:</p>
+                        <div class="codigo">
+                            <p class="pcodigo"> sudo <strong> apt</strong> remove nome_do_pacote </p>
+                        </div>
+                        <br>
+                        <p>Atualizar os pacotes: Para atualizar todos os pacotes instalados para suas versões mais recentes, use o seguinte comando:</p>
+                        <div class="codigo">
+                            <p class="pcodigo"> sudo <strong> apt </strong> upgrade </p>
+                        </div>
+                        <br>
+                        <p>Pesquisar pacotes: Para pesquisar pacotes com base em palavras-chave, use o seguinte comando:</p>
+                        <div class="codigo">
+                            <p class="pcodigo"><strong> apt </strong> search palavra-chave </p>
+                        </div>
+                        <br>
+                        <p>Mostrar informações de um pacote: Para exibir informações detalhadas sobre um pacote, use o seguinte comando:</p>
+                        <div class="codigo">
+                            <p class="pcodigo"><strong> apt </strong> show nome_do_pacote </p>
                         </div>
                     </div>
-                    <h4>Remover Diretórios</h4>
+
+                    <h4>Abrir Programas</h4>
                     <div id="removerDiretorios" style="letter-spacing: .3px; padding-bottom: 20px;">
-                        <p>Use o comando <strong> rmdir </strong> para excluir permanentemente um diretório vazio.</p>
+                        <p>Para abrir algum programa pelo terminal do Linux, nao tem nenhum segredo ou comando, é necessário somente
+                            que digite o nome do executável do programa que você deseja abrir. 
+                        </p>
                         
                         <div class="codigo">
-                        <p> <strong>rmdir</strong> nome_diretorio</p>
+                        <p> <strong>nome_do_programa</strong></p>
                     </div>
+                    <br>
+                    <p>Lembre-se de que alguns programas podem exigir privilégios de superusuário (root) para serem executados. Nesse caso, 
+                        você precisará usar o comando sudo antes do nome do programa e inserir a senha de administrador quando solicitado. Por exemplo:
+                    </p>
+                    <div class="codigo">
+                        <p> <strong>sudo nome_do_programa</strong></p>
+
 
                     
 
