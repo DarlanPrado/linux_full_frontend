@@ -111,22 +111,70 @@
             </ul>
             <hr style="color:aliceblue; margin: 2px">
             <div id="conteudo" style="min-width: 100%; min-height: 80vh; padding: 30px;">
-                <h1>Arquivos</h1>
+                <h1>Instalação</h1>
                 <div id="conteudoArquivos">
-                    <h4>Criar Diretórios</h4>
+                    <h4>Advanced Packaging Tool</h4>
                     <div id="criarDiretorios" style="letter-spacing: .3px; padding-bottom: 20px;">
-                        <p>Use o comando <strong> mkdir </strong> para criar um ou vários diretórios de uma só vez e definir permissões para cada um deles.</p>
+                        <p><strong> apt-get </strong>: Gerenciador de pacotes usado em sistemas baseados no Debian, como o Ubuntu.</p>
                         
                         <div class="codigo">
-                            <p class="pcodigo"><strong> mkdir </strong> nome_do_diretório </p>
+                            <p class="pcodigo">sudo <strong> apt-get </strong> install nome_do_pacote </p>
                         </div>
                     </div>
-                    <h4>Remover Diretórios</h4>
+                    <h4>Yellowdog Updater, Modified</h4>
                     <div id="removerDiretorios" style="letter-spacing: .3px; padding-bottom: 20px;">
-                        <p>Use o comando <strong> rmdir </strong> para excluir permanentemente um diretório vazio.</p>
+                        <p><strong> yum </strong>: Gerenciador de pacotes usado em sistemas baseados no Red Hat, como o CentOS.</p>
                         
                         <div class="codigo">
-                        <p> <strong>rmdir</strong> nome_diretorio</p>
+                        <p>sudo <strong>yum</strong> install nome_do_pacote</p>
+                    </div>
+
+                    <h4>Dandified Yum</h4>
+                    <div id="removerDiretorios" style="letter-spacing: .3px; padding-bottom: 20px;">
+                        <p><strong> dnf </strong>: Gerenciador de pacotes usado em sistemas Fedora, CentOS 8 e versões mais recentes.</p>
+                        
+                        <div class="codigo">
+                        <p>sudo <strong>dnf</strong> install nome_do_pacote</p>
+                    </div>
+
+                    <h4>Advanced Package Tool</h4>
+                    <div id="removerDiretorios" style="letter-spacing: .3px; padding-bottom: 20px;">
+                        <p><strong> apt </strong>: Gerenciador de pacotes usado em sistemas baseados no Debian, como o Ubuntu (versões mais recentes).</p>
+                        
+                        <div class="codigo">
+                        <p>sudo <strong>apt</strong> install nome_do_pacote</p>
+                    </div>
+
+                    <h4>Baixar arquivos da web</h4>
+                    <div id="removerDiretorios" style="letter-spacing: .3px; padding-bottom: 20px;">
+                        <p>Use o comando<strong> wget </strong> para baixar arquivos da web diretamente para o terminal.</p>
+                        
+                        <div class="codigo">
+                        <p><strong>wget</strong> URL_do_arquivo</p>
+                    </div>
+
+                    <h4>Descompactação</h4>
+                    <div id="removerDiretorios" style="letter-spacing: .3px; padding-bottom: 20px;">
+                        <p>Use o comando<strong> tar </strong> para descompactar e compactar arquivos em formato tar.</p>
+                        
+                        <div class="codigo">
+                        <p><strong>tar</strong> -xvf arquivo.tar</p>
+                    </div>
+
+                    <h4>Gerenciamento de pacotes</h4>
+                    <div id="removerDiretorios" style="letter-spacing: .3px; padding-bottom: 20px;">
+                        <p>Use o comando<strong> dpkg </strong>  para gerenciar pacotes no Debian e sistemas relacionados.</p>
+                        
+                        <div class="codigo">
+                        <p>sudo <strong> dpkg </strong> -i pacote.deb</p>
+                    </div>
+
+                    <h4>Gerenciamento de pacotes</h4>
+                    <div id="removerDiretorios" style="letter-spacing: .3px; padding-bottom: 20px;">
+                        <p>Use o comando<strong> make </strong> para compilar e instalar programas a partir do código-fonte.</p>
+                        
+                        <div class="codigo">
+                        <p><strong> make && make </strong>  install</p>
                     </div>
 
                     
