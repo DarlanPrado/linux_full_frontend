@@ -112,22 +112,94 @@
             </ul>
             <hr style="color:aliceblue; margin: 2px">
             <div id="conteudo" style="min-width: 100%; min-height: 80vh; padding: 30px;">
-                <h1>Arquivos</h1>
+                <h1>Permissão</h1>
                 <div id="conteudoArquivos">
-                    <h4>Criar Diretórios</h4>
+                    <h4>Alterar permissão</h4>
                     <div id="criarDiretorios" style="letter-spacing: .3px; padding-bottom: 20px;">
-                        <p>Use o comando <strong> mkdir </strong> para criar um ou vários diretórios de uma só vez e definir permissões para cada um deles.</p>
+                        <p>O comando<strong> chmod </strong> é o responsável por alterar as permissões de um arquivo ou pasta. Geralmente este comando é seguido de uma sequência de 3 números.</p>
                         
                         <div class="codigo">
-                            <p class="pcodigo"><strong> mkdir </strong> nome_do_diretório </p>
+                            <p class="pcodigo"><strong> chmod </strong> 777 arquivo.txt </p>
                         </div>
                     </div>
-                    <h4>Remover Diretórios</h4>
-                    <div id="removerDiretorios" style="letter-spacing: .3px; padding-bottom: 20px;">
-                        <p>Use o comando <strong> rmdir </strong> para excluir permanentemente um diretório vazio.</p>
+                    <h4>'Super-usuário'</h4>
+                    <div id="criarDiretorios" style="letter-spacing: .3px; padding-bottom: 20px;">
+                        <p>O comando<strong> sudo </strong>executa um comando com privilégios de superusuário.</p>
                         
                         <div class="codigo">
-                        <p> <strong>rmdir</strong> nome_diretorio</p>
+                            <p class="pcodigo"><strong> sudo </strong> apt-get update</p>
+                        </div>
+                    </div>
+                    <h4>Entrar como 'super usuário'</h4>
+                    <div id="removerDiretorios" style="letter-spacing: .3px; padding-bottom: 20px;">
+                        <p>Use o comando <strong> su </strong> para entrar como 'super-usuário' e adquirir todas suas respectivas permissões.</p>
+                        
+                        <div class="codigo">
+                        <p> <strong>su</strong></p>
+                    </div>
+                    <h4>Sair do 'super usuário'</h4>
+                    <div id="criarDiretorios" style="letter-spacing: .3px; padding-bottom: 20px;">
+                        <p>O comando<strong> exit </strong> é o responsável por sair do modo 'super usuário' e voltar para seu usuário anterior</p>
+                        
+                        <div class="codigo">
+                            <p class="pcodigo"><strong> exit </strong></p>
+                        </div>
+                    </div>
+                    <h4>Verificar as permissões do diretório</h4>
+                    <div id="criarDiretorios" style="letter-spacing: .3px; padding-bottom: 20px;">
+                        <p>O comando<strong> ls -l </strong> é o responsável por listar todos os conteúdos do diretório junto com suas respectivas permissões.</p>
+                        
+                        <div class="codigo">
+                            <p class="pcodigo"><strong> ls -l </strong> nome_do_diretorio </p>
+                        </div>
+                    </div>
+                    <h4>Alterar propietário</h4>
+                    <div id="criarDiretorios" style="letter-spacing: .3px; padding-bottom: 20px;">
+                        <p>O comando<strong> chown </strong> altera o proprietário de arquivos e diretórios.</p>
+                        
+                        <div class="codigo">
+                            <p class="pcodigo"><strong> chown </strong> user arquivo.txt</p>
+                        </div>
+                    </div>
+                    <h4>Adicionar usuário</h4>
+                    <div id="criarDiretorios" style="letter-spacing: .3px; padding-bottom: 20px;">
+                        <p>O comando<strong> adduser </strong> é o responsável por criar um novo usuário no sistema.</p>
+                        
+                        <div class="codigo">
+                            <p class="pcodigo"><strong> adduser </strong> nome_do_novo_usuario </p>
+                        </div>
+                    </div>
+                    <h4>Remover usuário</h4>
+                    <div id="criarDiretorios" style="letter-spacing: .3px; padding-bottom: 20px;">
+                        <p>O comando<strong> deluser </strong> é o responsável por remover um usuário do sistema.</p>
+                        
+                        <div class="codigo">
+                            <p class="pcodigo"><strong> deluser </strong> nome_do_usuario </p>
+                        </div>
+                    </div>
+                    <h4>Alterar senha</h4>
+                    <div id="criarDiretorios" style="letter-spacing: .3px; padding-bottom: 20px;">
+                        <p>O comando<strong> passwd </strong> é o responsável por alterar a senha do usuário atual ou de outro usuário.</p>
+                        
+                        <div class="codigo">
+                            <p class="pcodigo"><strong> passwd </strong></p>
+                        </div>
+                    </div>
+                    <h4>Definir máscara de permissão</h4>
+                    <div id="criarDiretorios" style="letter-spacing: .3px; padding-bottom: 20px;">
+                        <p>O comando<strong> umask </strong> define a máscara de permissões padrão para arquivos e diretórios criados por um usuário.</p>
+                        
+                        <div class="codigo">
+                            <p class="pcodigo"><strong> umask </strong> 022</p>
+                        </div>
+                    </div>
+                    <h4>Alterar grupo</h4>
+                    <div id="criarDiretorios" style="letter-spacing: .3px; padding-bottom: 20px;">
+                        <p>O comando<strong> chgrp </strong> altera o grupo de arquivos e diretórios.</p>
+                        
+                        <div class="codigo">
+                            <p class="pcodigo"><strong> chgrp </strong>group arquivo.txt</p>
+                        </div>
                     </div>
 
                     
