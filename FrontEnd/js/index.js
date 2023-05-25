@@ -31,7 +31,7 @@ function mostrarMenu(){
     html +='            <button id="arquivosButtom" type="button" class="btn btn-secondary">Arquivos</button>';
     html +='        </li>';
     html +='        <li class="nav-item">';
-    html +='            <button id="progamasButtom" type="button" class="btn btn-secondary">Progamas</button>';
+    html +='            <button id="progamasButtom" type="button" class="btn btn-secondary">Programas</button>';
     html +='        </li>';
     html +='        <li class="nav-item">';
     html +='            <button id="permissaoButtom" type="button" class="btn btn-secondary">Permissão</button>';
@@ -186,7 +186,7 @@ function mostrarProgamas(){
     
     let html = ' ';
 
-    html +='<h1 id="progamas-title">Progamas</h1>';
+    html +='<h1 id="progamas-title">Programas</h1>';
     html +='<div id="conteudoProgamas" >';
     html +='    <h4>Instalar Programas</h4>';
     html +='    <div id="criarDiretorios" style="letter-spacing: .3px; padding-bottom: 20px;">';
@@ -411,9 +411,9 @@ function mostrarServidor(){
 
     html +='<h1 id="servidor-title" >Servidor</h1>';
     html +='<div id="conteudoServidor" >';
-    html +='    <p>Quando se trata de servidor Web, existem inumeras maneiras de se obter o mesmo, porém o Apache é o mais usado, por ter seu código abertop, ter uma boa estabiliade além de várias outras caracteristicas</p>';
+    html +='    <p>Quando se trata de servidor Web, existem inumeras maneiras de se obter o mesmo, porém o Apache é o mais usado, por ter seu código aberto, ter uma boa estabiliade além de várias outras caracteristicas</p>';
     html +='    <h4>Instalação</h4>';
-    html +='    <p>para instalar o Apache no Ubunto, deve se primeiro atualizar os pacotes com o comando</p>';
+    html +='    <p>Para instalar o Apache no Ubunto, deve se primeiro atualizar os pacotes com o comando</p>';
     html +='    <div class="codigo">';
     html +='        <p>sudo apt <strong>update</strong></p>';
     html +='    </div>';
