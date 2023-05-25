@@ -411,18 +411,18 @@ function mostrarServidor(){
 
     html +='<h1 id="servidor-title" >Servidor</h1>';
     html +='<div id="conteudoServidor" >';
-    html +='    <p>Quando se trata de servidor Web, existem inumeras maneiras de se obter o mesmo, porém o Apashe é o mais usado, por ter seu código abertop, ter uma boa estabiliade além de várias outras caracteristicas</p>';
+    html +='    <p>Quando se trata de servidor Web, existem inumeras maneiras de se obter o mesmo, porém o Apache é o mais usado, por ter seu código abertop, ter uma boa estabiliade além de várias outras caracteristicas</p>';
     html +='    <h4>Instalação</h4>';
-    html +='    <p>para instalar o apashe no Ubunto, deve se primeiro atualizar os pacotes com o comando</p>';
+    html +='    <p>para instalar o Apache no Ubunto, deve se primeiro atualizar os pacotes com o comando</p>';
     html +='    <div class="codigo">';
     html +='        <p>sudo apt <strong>update</strong></p>';
     html +='    </div>';
-    html +='    <p>e após atualizar os pacotes, digitar o seguinte comando para instalar o apashe</p>';
+    html +='    <p>e após atualizar os pacotes, digitar o seguinte comando para instalar o Apache</p>';
     html +='    <div class="codigo">';
     html +='        <p>sudo apt <strong> install</strong> apache2</p>';
     html +='    </div>';
     html +='    <h4>Ajustar Firewall</h4>';
-    html +='    <p>Agora que temos o Apashe instalado, precisamos configurar o Firewall para permitir o acesso externo</p>';
+    html +='    <p>Agora que temos o Apache instalado, precisamos configurar o Firewall para permitir o acesso externo</p>';
     html +='    <p>para isso temos alguns perfis de configuração:</p>';
     html +='    <ul>';
     html +='        <li>Apache: Abre a porta 80</li>';
