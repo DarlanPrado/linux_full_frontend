@@ -468,7 +468,7 @@ function mostrarServidor(){
     html +='    ';
     html +='    <p>Reiniciar o Apache</p>';
     html +='    <div class="codigo">';
-    html +='        <p>sudo service apache2<strong>restart</strong></p>';
+    html +='        <p>sudo service apache2 <strong>restart</strong></p>';
     html +='    </div>';
     html +='    <p>Verificar o Status do Apache</p>';
     html +='    <div class="codigo">';
